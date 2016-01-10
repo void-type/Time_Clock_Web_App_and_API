@@ -1,0 +1,20 @@
+﻿<Window x:Class="Payroll_Api_Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="JAD Payroll Client" Height="356.931" Width="525">
+    <Grid Height="325" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="357*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="PayrollOutput" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="270" Width="498" Grid.ColumnSpan="2"/>
+        <DatePicker x:Name="DateInput" HorizontalAlignment="Left" Margin="30,287,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="GetPayrollButton" Content="Get Payroll" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="243.139,292,0,0" Click="GetPayrollButton_Click" Grid.Column="1"/>
+        <TextBox x:Name="WeeksInput" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" Margin="103.139,288,0,0" Grid.Column="1"/>
+        <Label x:Name="label" Content="Weeks" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53.139,285,0,0" Grid.Column="1"/>
+
+    </Grid>
+</Window>

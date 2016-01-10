@@ -1,0 +1,47 @@
+﻿body {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+a.logo {
+    background: url(../assets/logo.ico) no-repeat top left;
+    background-size: 60px 60px;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.jad-block {
+    padding: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #ecf0f1;
+    border-radius: 6px;
+}
+
+.number-cell {
+    text-align: right;
+    padding-right: 100px;
+}
+
+.gi-2x{ font-size: 1.5em;}

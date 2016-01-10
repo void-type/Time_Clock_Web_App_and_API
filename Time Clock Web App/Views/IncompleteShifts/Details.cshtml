@@ -1,0 +1,44 @@
+﻿@model JAD_Time_Clock_Web.Models.IncompleteShift
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Shift in Progress</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeStampIn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeStampIn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsHolidayPay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsHolidayPay)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Shifts", "PerEmployee", "Shifts", new { id = Model.EmployeeId }, null) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmployeeId }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.EmployeeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

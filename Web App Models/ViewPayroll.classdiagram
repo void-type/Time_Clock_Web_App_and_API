@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="25da39f1-51aa-4491-8992-66f08db70bf2" name="ViewPayroll" linkedPackageId="e8ad0cb3-2a30-4e1b-bcc5-92a9fe53950c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d18eab05-05c4-42a7-9a7e-5e2ed5167432" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d29f0fbc-18cb-4ccd-9dcf-f5e0b1b819f7" />
+        <generalsInternal>
+          <generalization Id="4be800ca-742a-4fc8-8fa9-0b604d145f6d" isSubstitutable="false">
+            <classMoniker Id="cb70cd76-1e2c-4012-8c4e-be2dad698b47" LastKnownName="Employee" />
+            <description>Is A</description>
+            <elementDefinition Id="410fc6b0-01c7-4329-aa77-e504b41ec85a" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="c5f8515e-dd5c-4ae3-b85e-217c87b272e9" isDerived="false" sourceEndRoleName="Logs Into" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e3114d76-a9b3-456b-9758-9f30219aa3e6" LastKnownName="IDCardReader" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe43832c-44c2-451b-9237-a41d0525fa5a" name="Logs Into" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3c5f898e-84db-46de-8451-db5d0da4e957" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4f22d9d-3c86-4948-b1fb-d5ef73e2842d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="407a1ff4-bc66-494b-8246-8eeb8d16c71e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7ed4685e-cecc-4198-aeaf-ca1a3949c91b" />
+          </association>
+          <association Id="dff1e16c-a931-4dea-89ff-6eae62b9ee97" isDerived="false" sourceEndRoleName="Uses" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c54649ba-3cf8-4ebf-8374-8f56d881cfc3" LastKnownName="PayrollCalcluator" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d0f3052-e9ec-4058-8ff7-62b1a1e5b784" name="Uses" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="07ac11cf-c1cd-4574-a233-d90d3e1c4eb8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="086d6a58-e449-488a-9266-c6a62b87a9f3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ced6065-fc3d-4441-b744-a403ca193770" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="40be2d88-f535-4c43-b875-534d524ba766" />
+          </association>
+          <association Id="4176fa20-c36c-4b85-ad44-10155908f7f7" isDerived="false" sourceEndRoleName="Uses" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="459a887e-7d53-447c-9e4a-7302a8235188" LastKnownName="PayrollFormatter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a19f48b-6670-46b3-a753-3da0ea9c9e13" name="Uses" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a7681f09-2e69-44fe-bb68-a3c08fd0ad1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ed51bf6c-cbdd-40d9-a540-cd7d948967d4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6128f981-89b5-43d4-8edc-7d872609b847" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd59bf37-2c03-41f8-a2de-3704845569e9" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cb70cd76-1e2c-4012-8c4e-be2dad698b47" name="Employee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fa0016be-ba01-4516-9c8c-7af05d5f58cb" />
+        <targetEnds>
+          <association Id="3ee60735-4fa5-481f-a271-962a980dd30f" isDerived="false" sourceEndRoleName="Reads" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="17134290-cf07-4e65-be55-f730e4af508e" LastKnownName="Employees.txt" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b2b7d9d7-3875-43f3-ad6b-caafa7423f5b" name="Reads" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d90dd994-389e-4f56-a15b-11e93bc37495" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad8106de-8cf2-40e1-a4e4-bef15a393f93" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8ffae149-e877-4728-a4fa-323e3fc61509" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="86582e51-796e-4173-a3c2-6109e3cbbd51" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="cd8b5a1f-2e05-4080-b1af-2ef4b7ec2aab" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9d18d284-e611-44f3-b65b-ad3c73490e77" />
+          </property>
+          <property Id="0b764542-8449-4f3b-bae9-af7762faa3e4" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="48cf7d42-261f-490b-8860-50561d6af7ad" />
+          </property>
+          <property Id="329cc666-3c63-4cc0-a77e-bc16269f875b" name="LastName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="044e15d9-907c-4974-b74e-deb99d6d7e51" />
+          </property>
+          <property Id="f78ff276-fb30-4ca6-aff8-5fafb8a67e78" name="EmployeeID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b242804d-c430-4637-ad75-aa3da1dd45c8" />
+          </property>
+          <property Id="820c2e37-3bb3-4250-bfc9-7cc9fbef5be3" name="PhoneNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66f68699-fcbb-42f4-a9c6-459a8a228794" />
+          </property>
+          <property Id="cb7ed692-f7da-408d-ae3a-6e1bad923f2b" name="Wage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6cf1976b-ab9a-4228-995e-0574e24ecde2" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c54649ba-3cf8-4ebf-8374-8f56d881cfc3" name="PayrollCalcluator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="61999f4c-651f-467b-9a41-ef14f8abf131" />
+        <targetEnds>
+          <association Id="473b92bc-420e-4a38-a449-da00e0243b64" isDerived="false" sourceEndRoleName="Contains" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="88ccd116-cd7c-46cd-95a1-63128fd0dc64" LastKnownName="PayStub" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0eebda08-bef5-4b71-be5a-09c3ab1bbddd" name="Contains" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="562304c1-3e8c-4cae-a31e-11e8cd0e2ee7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72bdda29-b176-45b3-8c6b-6151d8fd324c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="65b1b9a9-c0e9-402c-b1d5-e54c9e986760" name="Lower" value="*">
+                      <elementDefinition Id="ee8591b3-e1e2-4da6-9d79-bbbe474cde13" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="14c22264-52fe-4dc7-b240-f376a3c84188" name="Upper" value="*">
+                      <elementDefinition Id="99000395-b2d0-4fda-bdf8-7561b5770f2a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8f42c53d-a0e7-4a4e-b59e-65073c8b4599" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6dd90169-3649-44dc-bd45-4f853e795bfc" />
+          </association>
+          <association Id="cef81b68-c93a-4cd5-beec-bff25b5ff085" isDerived="false" sourceEndRoleName="Reads" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="60986da5-b2d2-4b4c-96c4-98b269a1c005" LastKnownName="Roster" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebce9634-0f05-47a3-ba7b-79111fb36534" name="Reads" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="68814f0b-e91f-4b47-9b03-3998f0c72385" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5bba8d5f-8fb7-4fdb-9ed0-bde12ef760f5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fb2b5a0c-4199-48b9-953c-7eea2953a9bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4be61c74-f9cc-4e7b-90fe-a15d6f959ad6" />
+          </association>
+          <association Id="781e661b-d80f-4b0c-841f-abd0002f0ecf" isDerived="false" sourceEndRoleName="Reads" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="961463f8-da4c-4986-a222-9fd64e5630c8" LastKnownName="Schedule" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87695a30-850f-4009-b82f-1b5661c0d9ae" name="Reads" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="28ac519b-79a7-4b90-96aa-e38e0ab11589" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0ec89ff-59ae-46a5-992b-a8ebea178301" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="e03d5454-b13e-45fe-997a-e3e0d652b9c4" name="Lower" value="1">
+                      <elementDefinition Id="61dd2cae-8333-460b-b621-935c0b0cd505" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9b92dff3-7f80-4a72-8e8a-0f394faecf36" name="Upper" value="*">
+                      <elementDefinition Id="c3cc55a9-435c-44df-82c3-f96c837f75be" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cef1f924-a18a-4347-a32c-d5b14764a096" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4c353137-eee4-4105-bc8c-efec5a109694" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="dc4c885a-9755-4ce5-8110-8ba6d78fd8c3" name="GetPayroll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f646ef0b-c66e-463e-bc34-c7f4968a0cee" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="88ccd116-cd7c-46cd-95a1-63128fd0dc64" name="PayStub" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="57d145ea-f30d-49d7-8ecb-3fea7e5b2001" />
+        <ownedAttributesInternal>
+          <property Id="e7060f32-193c-4d28-a95a-175327c48e52" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="95886744-160d-4e85-9063-261abc5b3e82" />
+          </property>
+          <property Id="6384982b-2632-4fcd-ae12-e832e3403325" name="Hours" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fa7efb28-e6db-4fb7-ab8e-08d9d7221bac" />
+          </property>
+          <property Id="f248aea3-2f5f-4587-8fcb-73e7dc2f7771" name="PSEmployee" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0123e8b9-07e9-46e4-867e-069ca46ef6de" />
+          </property>
+          <property Id="b7d3587c-e0ff-4d81-9dca-06e8e3707c87" name="Earnings" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="540a57e4-041e-47c8-a925-06fc11e6dd2c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9f1aee66-ad91-4ba2-87a5-065ebc0a6f30" name="Shift" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a2a6c8bb-bc20-4173-b1e3-5a982cc24fcd" />
+        <ownedAttributesInternal>
+          <property Id="adab34fc-8b6f-4c1b-9517-7d8227e57247" name="EmployeeID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2661d32b-929a-4471-a6ec-3b2ff9ff0949" />
+          </property>
+          <property Id="6b08db4c-f418-4957-83c5-b9bf11c7930f" name="TimeStampIn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="084589f1-8423-4d4d-8056-a2cd6f7a96ff" />
+          </property>
+          <property Id="bdeeb42d-37fe-4a4b-97ab-7fe1e6fb3c83" name="TimeStampOut" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e8da03c4-6004-433c-9f35-79aaf599f44d" />
+          </property>
+          <property Id="c72d50f1-64e9-472b-9e18-dfaa0c678e7c" name="IsHolidayPay" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c300c835-0ada-4692-9b74-f06bdc57ddca" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e3114d76-a9b3-456b-9758-9f30219aa3e6" name="IDCardReader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="985ce380-14eb-4dca-98ba-548bbf29dc7a" />
+        <targetEnds>
+          <association Id="b91fdb99-be99-4465-a82a-f5245066b9d5" isDerived="false" sourceEndRoleName="Uses" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="fd22c9e3-8f12-4afc-b8c2-dd38f2042258" LastKnownName="EmployeeFinder" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b23142af-c3e6-4ddd-b4cf-b82aefdfe93c" name="Uses" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="61a69cd9-8b3e-4cd8-8352-4408c6808b92" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="596f2c7d-87cd-40ff-9be3-651ba513b512" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="73c97149-3b78-43c3-8dad-cb7c37edcfab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9404f8ee-62fd-4b3c-91f6-d614c1d10f9e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="93faae33-f96b-431b-b9a7-123d7f3818c2" name="CurrentlyLoggedIn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b1cb1848-161b-46a2-9332-33b46dd00b54" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ded0c338-6f4c-46f9-a4a2-f46b42258b77" name="AuthenticateEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="990a4d0f-a5f9-4af6-835c-9cfebe7bf4f7" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="961463f8-da4c-4986-a222-9fd64e5630c8" name="Schedule" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d9d56dde-92e1-4382-98a8-0f7838f58109" />
+        <targetEnds>
+          <association Id="07b00084-6fd9-4960-8b56-00ea5749fd6c" isDerived="false" sourceEndRoleName="Contains" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9f1aee66-ad91-4ba2-87a5-065ebc0a6f30" LastKnownName="Shift" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f890ef9-3082-47c3-a347-04c8d37d561e" name="Contains" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b31e936e-c57e-469a-9027-4c003fd251c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7936f73f-1b7f-4d79-a9ad-00e16dc5279c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="629f8607-2cb9-4fd1-af95-ee140a0f01ac" name="Lower" value="*">
+                      <elementDefinition Id="4f09c212-1fee-41c9-92c5-89d61ff26c12" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="befd8e71-eaed-45d4-b324-04d968e9dcc0" name="Upper" value="*">
+                      <elementDefinition Id="983094d8-0e54-4e9c-b3a5-ce2ce446e9da" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b73fc362-3470-45b6-9bc7-96e4f358cc0f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="085a626c-5fcf-44a8-96d2-57af47d2c450" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d8790407-869f-48f4-9130-6c93b5998e32" name="Shifts" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0d7fdb4e-a52a-4428-b47f-c04dda173e35" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="60986da5-b2d2-4b4c-96c4-98b269a1c005" name="Roster" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db11daab-3172-4e38-a88c-26e4f7669534" />
+        <targetEnds>
+          <association Id="db2f4870-e6a4-4be6-8855-e260bd9ff955" isDerived="false" sourceEndRoleName="Contains" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cb70cd76-1e2c-4012-8c4e-be2dad698b47" LastKnownName="Employee" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ea1cab1-3432-494e-b45c-9da7bf93a48f" name="Contains" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7d427db2-fc3e-4655-9d12-38624075d4a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="49c0bd46-9320-4d54-9ef2-e28337797749" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="dbc7f43d-4f8f-44dc-9d58-5bcd77ec70b9" name="Lower" value="1">
+                      <elementDefinition Id="85f18743-4d83-43a1-87c5-054dddf571da" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="20613600-50d4-416e-a5b7-62a6ca0c1abf" name="Upper" value="*">
+                      <elementDefinition Id="136cc708-850f-4f91-a521-c7d11d7318b5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="97eb3981-5916-4c9f-9661-29a84de95178" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7a62b7af-4205-4515-814a-a7350813cdfa" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="054898cf-2501-4eef-8c9d-daf01f33cacd" name="Employees" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4892669-e53d-4c17-8719-ac868aa1a6d9" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fd22c9e3-8f12-4afc-b8c2-dd38f2042258" name="EmployeeFinder" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="41d822c0-d401-4a43-8555-68a797ad02e6" />
+        <targetEnds>
+          <association Id="887ea9b3-280d-4fb1-80cf-4a3205d0ea14" isDerived="false" sourceEndRoleName="Reads" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="60986da5-b2d2-4b4c-96c4-98b269a1c005" LastKnownName="Roster" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f03e9669-8e1c-4a8d-901f-d55b93803164" name="Reads" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4ee3073e-8c0c-4068-9936-5d80917cbf86" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c63602e-2301-44b6-b4b0-ca6d07ebb006" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3568e15f-de96-448b-8cba-dc37e06d106d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="39f681a1-530d-435f-8804-8ec9771dd42a" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="af91251d-1d5d-4b3f-bea4-003901f36bb6" name="FindEmployeeByID" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9a5098b1-8a8b-4e68-bf0d-3f3c14def2ea" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="459a887e-7d53-447c-9e4a-7302a8235188" name="PayrollFormatter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bd9d662c-bfb9-43ad-8f84-42717f169127" />
+        <ownedOperationsInternal>
+          <operation Id="cc28b9de-b06e-4a7e-b5e5-ebba849d7138" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8f4e404d-bdde-440d-8c61-1bbc4cf6189a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17134290-cf07-4e65-be55-f730e4af508e" name="Employees.txt" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="166f10e8-be33-4002-ad9b-c30894d01e57" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="e8ad0cb3-2a30-4e1b-bcc5-92a9fe53950c" name="Project 3 Models">
+    <elementDefinition Id="5caa6da0-f95b-48ed-9c71-81f524055f66" />
+    <profileInstances>
+      <packageHasProfileInstances Id="29adc214-20f3-423a-bbc6-67eb1035ab10">
+        <profileInstance Id="a24f2c49-9fa7-4a1e-a8a9-524793e6971c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d99eb5d0-b16d-44e4-a5b9-d1d7c47d9c8c">
+        <profileInstance Id="555c1185-7579-46a3-bb19-f212d44d057d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

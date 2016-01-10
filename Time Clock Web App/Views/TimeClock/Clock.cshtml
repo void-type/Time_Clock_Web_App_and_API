@@ -1,0 +1,44 @@
+﻿@model JAD_Time_Clock_Web.Models.ClockInViewModel
+@{
+    ViewBag.Title = "Time Clock";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("Clock", "TimeClock", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Clock In or Out</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Credentials, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Credentials, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-info" value="Clock In/Out" />
+        </div>
+    </div>
+
+    <div class="col-md-offset-2 col-md-10">
+        @if (ViewBag.ClockInResult != null & ViewBag.ClockInResult)
+        {
+            <p class="text-success">@ViewBag.ClockMessage</p>
+        } else
+        {
+            <p class="text-danger">@ViewBag.ClockMessage</p>
+        }
+    </div>
+}
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

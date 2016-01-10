@@ -1,0 +1,52 @@
+﻿@model IEnumerable<JAD_Time_Clock_Web.Models.Shift>
+
+@{
+    ViewBag.Title = "See all shifts worked";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeStampIn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeStampOut)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsHolidayPay)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeStampIn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeStampOut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsHolidayPay)
+            </td>
+            <td>
+                <a href="@Url.Action("Details", "Shifts", new {id = item.Id})">
+                        <span class="glyphicon glyphicon-edit gi-2x"></span>
+                </a>
+            </td>
+        </tr>
+    }
+
+</table>

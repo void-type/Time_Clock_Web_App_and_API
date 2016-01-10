@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="col-md-12">
+    <div class="jad-block">
+
+        <h2>JAD Time Clock</h2>
+        <p class="lead">Keep track of your time worked!</p>
+        <p>
+            <input class="btn btn-info btn-lg" type="button" value="Clock In/Out &raquo;" onclick="location.href = '@Url.Action("Clock", "TimeClock")'" />
+        </p>
+    </div>
+</div>
+
+@if (Request.IsAuthenticated)
+{
+    <div>
+        <div class="col-md-3">
+            <div class="jad-block">
+                <h3>Payroll</h3>
+                <p>
+                    <input class="btn btn-info" type="button" value="View &raquo;" onclick="location.href = '@Url.Action("Index", "Payroll")'" />
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+            <div class="jad-block">
+                <h3>Employees</h3>
+                <p>
+                    <input class="btn btn-info" type="button" value="Manage &raquo;" onclick="location.href = '@Url.Action("Index", "Employees")'" />
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+            <div class="jad-block">
+                <h3>Shifts</h3>
+                <p>
+                    <input class="btn btn-info" type="button" value="Manage &raquo;" onclick="location.href = '@Url.Action("Index", "Shifts")'" />
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+            <div class="jad-block">
+                <h3>Working</h3>
+                <p>
+                    <input class="btn btn-info" type="button" value="View &raquo;" onclick="location.href = '@Url.Action("Index", "IncompleteShifts")'" />
+                </p>
+            </div>
+        </div>
+    </div>
+}

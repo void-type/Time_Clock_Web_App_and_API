@@ -1,0 +1,45 @@
+﻿@model IEnumerable<JAD_Time_Clock_Web.Models.PayStub>
+
+@{
+    ViewBag.Title = "View Payroll";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    @Html.ActionLink("New Range", "Index")
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeName)
+        </th>
+        <th class="number-cell">
+            @Html.DisplayNameFor(model => model.NormalHours)
+        </th>
+        <th class="number-cell">
+            @Html.DisplayNameFor(model => model.HolidayHours)
+        </th>
+        <th class="number-cell">
+            @Html.DisplayNameFor(model => model.Earnings)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeName)
+            </td>
+            <td class="number-cell">
+                @Html.DisplayFor(modelItem => item.NormalHours)
+            </td>
+            <td class="number-cell">
+                @Html.DisplayFor(modelItem => item.HolidayHours)
+            </td>
+            <td class="number-cell">
+                @Html.DisplayFor(modelItem => item.Earnings)
+            </td>
+        </tr>
+    }
+</table>

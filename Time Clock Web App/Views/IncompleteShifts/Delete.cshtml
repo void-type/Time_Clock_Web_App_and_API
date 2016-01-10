@@ -1,0 +1,48 @@
+﻿@model JAD_Time_Clock_Web.Models.IncompleteShift
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Shift in Progress</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeStampIn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeStampIn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsHolidayPay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsHolidayPay)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-info" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
